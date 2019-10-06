@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Перевір свої знання технологій!</title>
+  <link rel="stylesheet" href="./index.min.css">
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149471389-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149471389-1');
+  </script>
+
+  <!-- OG tags -->
+  <meta property="og:locale" content="uk" />
+  <meta property="og:title" content="Перевір свої знання технологій!" />
+  <meta property="og:description" content="Перевір свої знання технологій!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dive to Technology" />
+  <meta property="og:image" content="https://diveto.technology/images/assets/cover.png" />
+  <meta
+          property="og:image:secure_url"
+          content="https://diveto.technology/images/assets/cover.png"
+  />
+  <meta property="og:image:width" content="1108" />
+  <meta property="og:image:height" content="1456" />
+</head>
+<body>
+<div class="stage">
+  <div class="title">Перевір свої знання технологій!</div>
+
+  <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
+    <div id="stackedcards-container" class="stackedcards-container"></div>
+
+    <div class="stackedcards--animatable stackedcards-overlay right">
+      <img src="./images/assets/Path_3x.png" width="auto" height="auto"/>
+    </div>
+  </div>
+
+  <div id="progress" class="progress"></div>
+  <div class="global-actions">
+    <div class="left-action">
+      <img src="./images/assets/20_status_close_3x.png" width="26" height="26"/>
+    </div>
+    <div class="right-action">
+      <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FscXVlXzEiIGRhdGEtbmFtZT0iQ2FscXVlIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxMi42OTI5MSAxMC42OTI5MSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJEw6lncmFkw6lfc2Fuc19ub21fMTAiIHgxPSIzLjU3NTE3IiB5MT0iNy44MDUwMiIgeDI9IjExLjE3NTU3IiB5Mj0iMy4xOTQ5NCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzI4YjRiMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI4Y2Y5MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjx0aXRsZT5TYW5zIHRpdHJlIC0gNTwvdGl0bGU+PHBhdGggZD0iTTYuMTY2NSw5LjEwNzQyYTEuNDg5ODIsMS40ODk4MiwwLDAsMS0uODk3OTUtLjMwMTc2LDEuMzIsMS4zMiwwLDAsMS0uMTY1LS4xNDM1NUwyLjcxOTczLDYuMjc5M0EuNzQ5OTIuNzQ5OTIsMCwxLDEsMy43ODAyNyw1LjIxODc1bDIuMzg5MTYsMi4zODc3LDMuOTgxLTUuMzA3NjJhLjc0OTgxLjc0OTgxLDAsMSwxLDEuMTk5MjIuOTAwMzlMNy4zNjkxNCw4LjUwNjg0YTEuNDg4NjMsMS40ODg2MywwLDAsMS0uOTg3My41ODVBMS42MDM4NiwxLjYwMzg2LDAsMCwxLDYuMTY2NSw5LjEwNzQyWiIgc3R5bGU9ImZpbGw6dXJsKCNEw6lncmFkw6lfc2Fuc19ub21fMTApIi8+PC9zdmc+">
+    </div>
+  </div>
+
+  <div id="DIV_1">
+    <p id="P_2">
+      Score: <span id="score">0</span>
+    </p>
+    <div id="DIV_3">
+      <div id="progress-line" class="progress-line">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="final-state">
+  <div class="final-state-inner">
+    <h1 class="result-title">Ваш результат: <span id="final-score">0</span>/15</h1>
+    <br>
+    <br>
+    <div class="final-description">
+      Якщо Вам сподобався такий тест - залиште нам свій email. <br>
+      Ми ...
+    </div>
+
+    <div class="subscribe-section">
+      <div id="subscribe-form" class="subscribe-form">
+        <div>
+          <input id="email-input" class="email-input" type="email" placeholder="email" />
+          <div id="error-box" class="hidden error-box"></div>
+        </div>
+        <div id="subscribe-btn" class="subscribe-btn">
+          Subscribe
+        </div>
+      </div>
+      <div id="subscription-result" class="hidden subscription-result">
+        Так тримати!
+      </div>
+    </div>
+
+    <p>
+      Розшарь цей тест для друзів!
+    </p>
+    <div>Share</div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/main.bundle.js"></script></body>
+</html>
