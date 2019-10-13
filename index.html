@@ -37,8 +37,18 @@
   <meta property="og:image:height" content="1456" />
 </head>
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="stage">
-  <div class="title">Перевір свої знання технологій!</div>
+  <div class="title title--animatable init">Перевір свої знання технологій!</div>
 
   <div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
     <div id="stackedcards-container" class="stackedcards-container"></div>
@@ -46,10 +56,15 @@
     <div class="stackedcards--animatable stackedcards-overlay right">
       <img src="./images/assets/Path_3x.png" width="auto" height="auto"/>
     </div>
+
+    <div class="stackedcards--animatable stackedcards-overlay left">
+      <img src="./images/assets/Path_3x.png" width="auto" height="auto"/>
+    </div>
   </div>
 
-  <div id="progress" class="progress"></div>
-  <div class="global-actions">
+  <div id="progress" class="progress progress--animatable init"></div>
+
+  <div class="global-actions global-actions--animatable init">
     <div class="left-action">
       <img src="./images/assets/20_status_close_3x.png" width="26" height="26"/>
     </div>
@@ -58,7 +73,7 @@
     </div>
   </div>
 
-  <div id="DIV_1">
+  <div id="DIV_1" class="bar bar--animatable init">
     <p id="P_2">
       Score: <span id="score">0</span>
     </p>
@@ -74,11 +89,9 @@
     <h1 class="result-title">Ваш результат: <span id="final-score">0</span>/15</h1>
     <br>
     <br>
-    <div class="final-description">
-      Якщо Вам сподобався такий тест - залиште нам свій email. <br>
-      Ми ...
-    </div>
+    <div id="final-description" class="final-description"></div>
 
+    <div class="subscribe-form-title">Сподобався тест - залиште свій email. будь в курсі наших подій</div>
     <div class="subscribe-section">
       <div id="subscribe-form" class="subscribe-form">
         <div>
@@ -93,13 +106,18 @@
         Так тримати!
       </div>
     </div>
-
-    <p>
-      Розшарь цей тест для друзів!
-    </p>
-    <div>Share</div>
   </div>
 </div>
 
+<div class="sharing">
+  <div class="sharing-inner">
+    <div class="sharing-title">Розшарь цей тест для друзів!</div>
+    <!-- Your share button code -->
+    <div class="fb-share-button"
+         data-href="https://diveto.technology/"
+         data-layout="button_count">
+    </div>
+  </div>
+</div>
 <script type="text/javascript" src="/main.bundle.js"></script></body>
 </html>
